@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="Udacity Responsive Images course project" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link href="http://code.rifix.net/elusiveicons/2.0.0/css/elusive-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>MacGuffin</title>
+    <link rel="stylesheet" type="text/css" href="mobile.css"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top colornav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar"> <span class="glyphicon glyphicon-menu-hamburger"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="page-scroll" href="#home">Home</a></li>
+                    <li> <a class="page-scroll" href="#services">Servicios</a> </li>
+                    <li> <a class="page-scroll" href="#us">Nosotros</a> </li>
+                    <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+                    <li> <a class="page-scroll" href="#contact">Contacto</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="intro">
+        <div class=" container-fluid">
+            <div class="intro-body row row-centered">
+                    <div class="col-md-10 col-sm-10 col-xs-10 intro-col">
+                        <img class="intro-img" src="img/Logo.png" alt="logo macguffin">
+                        <h2 class="intro-text white text-center">Somos creadores de <span class="yellow">sentido</span>, proveedores de <span class="yellow">historias</span></h2>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <section id="services" class="container-fluid row-centered">
+        <div class="row row-centered service grey">
+            <div class="col-sm-2 col-md-2 col-xs-8 serv text-center">
+                <img class="img-responsive center-block" src="img/heart.png" alt="icono corazon">
+                <h3>CREATIVIDAD</h3>
+                <p>Desarrollo y estrategía de</p>
+                <p>CONTENIDOS</p>
+                <p>Redacción institucional</p>
+            </div>
+            <div class="col-sm-2 col-md-2 col-xs-8 serv text-center">
+                <img class="img-responsive center-block" src="img/diamond.png" alt="icono diamante">
+                <h3>DISEÑO</h3>
+                <p>Diseño digital</p>
+                <p>Ilustración 2D</p>
+                <p>Modelado y render 3D</p>
+            </div>
+            <div class="col-sm-2 col-md-2 col-xs-8 serv text-center">
+                <img class="img-responsive center-block" src="img/camera.png" alt="icono camara">
+                <h3>MULTIMEDIA</h3>
+                <p>Motion Graphics</p>
+                <p>Animación 2D y 3D</p>
+                <p>Produción live actions</p>
+                <p>Edición</p>
+            </div>
+            <div class="col-sm-2 col-md-2 col-xs-8 serv text-center">
+                <img class="img-responsive center-block" src="img/phone.png" alt="icono celular">
+                <h3>WEB</h3>
+                <p>Diseño y programación web</p>
+                <p>Redes sociales</p>
+            </div>
+        </div>
+    </section>
+    <section id="us" class="container-fluid bck2">
+        <div class="row row-centered text-center">
+            <div class="col-sm-12 col-md-12 col-xs-12 text-center us ">
+                <h1 class="white" >Macguffin <span class="yellow">es una excusa argumental que hace avanzar tu historia</span></h1>
+                <p class="text-justify white">Estamos allí, en el encuentro perfecto entre <span class="yellow" >arte</span> y <span class="yellow" >diseño</span>: tomando ventaja de la <span class="yellow" >tecnología</span>, potenciando el poder de la imagen y siguiendo con pasión el horizonte. Utilizando los mejores recursos para crear experiencias únicas, para iluminar los valores de una marca y para llegar a lugares inexplorados. O simplemente porque una idea genial necesita ser creada. </p>
+                <h3 class="white">Nosotros sabemos traer historias a la realidad!</h3>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="container-fluid">
+        <div class="row row-centered text-center title">
+            <h2 class="grey">Nuestro <span class="purple" >portfolio</span></h2>
+        </div>
+        <div class="row row-centered">
+            <div class="col-sm-6 col-md-6 col-xs-8 text-center port-btn">
+                <button class="b1" type="button" onclick="showImg('all')" value="ALL">ALL</button>
+                <span>|</span>
+                <button class="b1" type="button" onclick="showImg('diseño')" value="diseño">DISEÑO</button>
+                <span>|</span>
+                <button class="b1" type="button" onclick="showImg('web')" value="WEB">WEB</button>
+                <span>|</span>
+                <button class="b1" type="button" onclick="showImg('media')" value="MEDIA">MEDIA</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row row-centered center-block port-img">
+                <div class="col-sm-10 col-xs-10 col-centered text-center construction">
+                   <p class="purple">EN CONSTRUCCIÓN</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-centered port-more">
+            <button class="white btn-more b2" type="button" onclick="showImg('all')" value="more">VER MÁS</button>
+        </div>
+    </section>
+    <section id="contact" class="container-fluid">
+        <div class="row text-center title">
+            <h2 class="grey">Contacta<span class="purple">nos</span></h2>
+        </div>
+        <div class="row row-centered">
+                            <div class="col-md-6 col-xs-12 contact-form">
+                                <form method="post">
+                                    <div class="form-group ">
+                                        <input class="form-control purple" id="name" name="name" placeholder="Nombre" type="text" /> </div>
+                                    <div class="form-group ">
+                                        <input class="form-control" id="email" name="email" placeholder="Email" type="text" /> </div>
+                                    <div class="form-group ">
+                                        <input class="form-control" id="subject" name="subject" placeholder="Asunto" type="text" /> </div>
+                                    <div class="form-group ">
+                                        <textarea class="form-control" cols="40" id="message" name="message" placeholder="Mensaje" rows="10"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button class="btn btn-primary white" name="submit" type="submit"> ENVIAR </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 info">
+                    <div class="row text-center mail">
+                        <!--MAIL AND ADRESS-->
+                        <p class="grey">info@macguffin.com.ar</p>
+                        <p class="grey">Buenos Aires, Argentina.</p>
+                    </div>
+                    <div class="row text-center icons">
+                        <!--SOCIAL ICONS-->
+                        <a href="http://www.facebook.com/"> <span class="el el-facebook el-2x" aria-hidden="true"></span> </a>
+                        <a href="#"> <span aria-hidden="true" class="el el-instagram el-2x"></span> </a>
+                        <a href="http://www.vimeo.com/"> <span aria-hidden="true" class="el el-vimeo el-2x"></span> </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer id="footer" class="footer container-fluid">
+        <div class="row row-centered">
+            <div class="col-sm-8 text-center">
+                <p class="grey">2017 - <span class="purple existence">Macguffin</span> Creatividad | Diseño | Tecnología</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
