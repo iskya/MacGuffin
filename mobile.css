@@ -251,9 +251,7 @@ h2 {
     position: relative;
     vertical-align: middle;
     justify-content: space-around;
-    border-width: 30px;
-    border-style: solid;
-    border-color: transparent;
+    border-width: 30px solid transparent;
 }
 .us-intro {
     font-family: 'Lato', sans-serif;
@@ -262,7 +260,6 @@ h2 {
     line-height: 1.5em;
     word-spacing: 0.30em;
     text-align: center;
-
 }
 
 .us-par {
